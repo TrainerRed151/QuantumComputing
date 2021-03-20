@@ -83,6 +83,7 @@
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
 \usepackage{tipa}
 \usepackage{amsmath}
+\usepackage{physics}
 
 \usepackage{multicol}
 \usepackage{fancyvrb}
@@ -136,34 +137,36 @@ P\&GG Monotechnische Anstalt\\ % Your institution for the title page
 \frametitle{Bin\"are Zahlen}
 In decimal notation,
 \begin{equation*}
-1572_{10} = 1\times10^3 + 5\times10^2 + 7\times10^1 + 2\times10^0
+1572_{10} = 1\times10^3 + \pause 5\times10^2 + \pause 7\times10^1 + \pause 2\times10^0
 \end{equation*}
-Going from decimal to binary notation,
-\begin{align*}
-27_{10} &= 16 + 8 + 2 + 1 \\
-&= 1\times2^4 + 1\times2^3 + 0\times2^2 + 1\times2^1 + 1\times2^0 \\
-&= 11011_2
-\end{align*}
+\pause
 From binary to decimal,
 \begin{align*}
 1001101_2 &= 1\times2^6 + 1\times2^3 + 1\times2^2 + 1\times2^0 \\
 &= 64 + 8 + 4 + 1 \\
 &= 77_{10}
 \end{align*}
+\pause
+Going from decimal to binary notation,
+\begin{align*}
+27_{10} &= 16 + 8 + 2 + 1 \\
+&= 1\times2^4 + 1\times2^3 + 0\times2^2 + 1\times2^1 + 1\times2^0 \\
+&= 11011_2
+\end{align*}
 \end{frame}
 
 \begin{frame}
 \frametitle{Powers von zwei}
 \begin{align*}
-2^0 &= 1 \\
-2^1 &= 2 \\
-2^2 &= 4 \\
-2^3 &= 8 \\
-2^4 &= 16 \\
-2^5 &= 32 \\
-2^6 &= 64 \\
-2^7 &= 128 \\
-2^8 &= 256
+	2^0 &= 1                 &= 000000001_2    \\
+	2^1 &= \uncover<2->{ 2   &= 000000010_2   \\}
+	2^2 &= \uncover<3->{ 4   &= 000000100_2  \\}
+	2^3 &= \uncover<4->{ 8   &= 000001000_2 \\}
+	2^4 &= \uncover<5->{ 16  &= 000010000_2 \\}
+	2^5 &= \uncover<6->{ 32  &= 000100000_2 \\}
+	2^6 &= \uncover<7->{ 64  &= 001000000_2 \\}
+	2^7 &= \uncover<8->{ 128 &= 010000000_2 \\}
+	2^8 &= \uncover<9->{ 256 &= 100000000_2}
 \end{align*}
 \end{frame}
 
@@ -208,6 +211,24 @@ From binary to decimal,
 \section{Computadora Cu\'antica: Eine schwarze Kunst}
 
 \subsection{Quantenzust\"ande}
+
+\begin{frame}
+\frametitle{A QPU operates on Qubits instead of bits}
+\begin{itemize}
+	\item QPU: Quantum Processing Unit
+	\item Bits: 0, 1
+	\item Qubits: $\ket{0}$, $\ket{1}$, and superpositions
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Light is a wave}
+\begin{figure}
+\centering
+\includegraphics[width=\textheight,trim={0 0 0 190},clip]{light.png}
+\label{polar1}
+\end{figure}
+\end{frame}
 
 \begin{frame}
 \frametitle{Polarization Experiment}
