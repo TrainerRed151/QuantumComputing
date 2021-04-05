@@ -84,6 +84,7 @@
 \usepackage{tipa}
 \usepackage{amsmath}
 \usepackage{physics}
+\usepackage{siunitx}
 
 \usepackage{multicol}
 \usepackage{fancyvrb}
@@ -102,7 +103,7 @@ P\&GG Monotechnische Anstalt\\ % Your institution for the title page
 %\medskip
 %\textit{bpomerantz@maizeanalytics.com} % Your email address
 }
-\date{2021 M\"arz 21} % Date, can be changed to a custom date
+\date{2021 M\"arz 20 und 2021 April April} % Date, can be changed to a custom date
 
 \AtBeginSection[] {
 \begin{frame}
@@ -255,6 +256,30 @@ Going from decimal to binary notation,
 \includegraphics[width=\textwidth]{polar3.png}
 \label{polar3}
 \end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Vektoren}
+Alle Polarisationsrichtungen können durch zwei Vektoren dargestellt werden:
+\begin{align*}
+	\ket{\psi} &= a\ket{\to} + b\ket{\uparrow}
+\end{align*}
+Die Notation wird Bra-ket Notation genannt.
+
+Beispiele:
+\begin{align*}
+	\ket{\SI{45}{\degree}} &= \frac{1}{\sqrt2}\ket{\to} + \frac{1}{\sqrt2}\ket{\uparrow}
+	\\
+	\ket{\SI{135}{\degree}} &= -\frac{1}{\sqrt2}\ket{\to} + \frac{1}{\sqrt2}\ket{\uparrow}
+	\\
+	\ket{\SI{30}{\degree}} &= \frac{1}{2}\ket{\to} + \frac{\sqrt3}{2}\ket{\uparrow}
+	\\
+	\ket{\theta} &= \sin\theta\ket{\to} + \cos\theta\ket{\uparrow}
+\end{align*}
+\end{frame}
+
+\begin{frame}
+\frametitle{Wahrscheinlichkeiten}
 \end{frame}
 
 \end{document} 
