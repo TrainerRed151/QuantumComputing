@@ -261,39 +261,124 @@ Going from decimal to binary notation,
 \begin{frame}
 \frametitle{Vektoren}
 Alle Polarisationsrichtungen können durch zwei Vektoren dargestellt werden:
-\begin{align*}
-	\ket{\psi} &= a\ket{\to} + b\ket{\uparrow}
-\end{align*}
+\begin{columns}
+    \begin{column}{5cm}
+        \begin{align*}
+            \ket{\psi} &= a\ket{\to} + b\ket{\uparrow}
+        \end{align*}
+    \end{column}
+    \begin{column}{5cm}
+        \begin{figure}
+            \centering
+            \includegraphics[height=0.5\textheight]{fig24.png}
+            \label{fig24}
+        \end{figure}
+    \end{column}
+\end{columns}
 Die Notation wird Bra-ket Notation genannt.
+\end{frame}
+
+\begin{frame}
+    \frametitle{Vektoren}
+    \begin{columns}
+        \begin{column}{5cm}
+            \begin{align*}
+                \ket{\psi} &= a\ket{\to} + b\ket{\uparrow}
+            \end{align*}
+        \end{column}
+        \begin{column}{5cm}
+            \begin{figure}
+                \centering
+                \includegraphics[height=0.33\textheight]{fig24.png}
+                \label{fig24}
+            \end{figure}
+        \end{column}
+\end{columns}
 
 Beispiele:
 \begin{align*}
-	\ket{\SI{45}{\degree}} &= \frac{1}{\sqrt2}\ket{\to} + \frac{1}{\sqrt2}\ket{\uparrow}
-	\\
-	\ket{\SI{135}{\degree}} &= -\frac{1}{\sqrt2}\ket{\to} + \frac{1}{\sqrt2}\ket{\uparrow}
-	\\
-	\ket{\SI{30}{\degree}} &= \frac{1}{2}\ket{\to} + \frac{\sqrt3}{2}\ket{\uparrow}
-	\\
-	\ket{\theta} &= \sin\theta\ket{\to} + \cos\theta\ket{\uparrow}
+    \ket{\SI{45}{\degree}} &= \frac{1}{\sqrt2}\ket{\to} + \frac{1}{\sqrt2}\ket{\uparrow}
+    \\
+    \ket{\SI{135}{\degree}} &= -\frac{1}{\sqrt2}\ket{\to} + \frac{1}{\sqrt2}\ket{\uparrow}
+    \\
+    \ket{\SI{30}{\degree}} &= \frac{1}{2}\ket{\to} + \frac{\sqrt3}{2}\ket{\uparrow}
+    \\
+    \ket{\theta} &= \sin\theta\ket{\to} + \cos\theta\ket{\uparrow}
 \end{align*}
+\end{frame}
+
+\begin{frame}
+\frametitle{Wahrscheinlichkeiten}
+\begin{columns}
+    \begin{column}{5cm}
+        \begin{align*}
+            \ket{\psi} &= a\ket{\to} + b\ket{\uparrow}
+        \end{align*}
+    \end{column}
+    \begin{column}{5cm}
+        \begin{figure}
+            \centering
+            \includegraphics[height=0.3\textheight]{fig24.png}
+            \label{fig24}
+        \end{figure}
+    \end{column}
+\end{columns}
+
+\bigskip
+Welle: $|a|^2$ und $|b|^2$ sind die relativen Intensit\"aten des jeweiligen Zustandes.
+
+\bigskip
+Teilchen: $|a|^2$ und $|b|^2$ sind die relativen Wahrscheinlichkeiten das Teilchen im jeweiligen Zustand vorzufinden.
+\end{frame}
+
+\begin{frame}
+\frametitle{Normalisierung eines Vektors: Bras und Kets}
+[Talk about orthogonality, then inner product, then normalization, then measurements.]
+\begin{align*}
+    \ket{\psi} &= a\ket{\to} + b\ket{\uparrow},
+    \\
+    \bra{\psi} &= a^*\bra{\to} + b^*\bra{\uparrow},
+\end{align*}
+wobei $a^*$ ist die konjugiert komplexe Zahl von $a$.
+
+\bigskip
+Teilchen: $|a|^2$ und $|b|^2$ sind die relativen Wahrscheinlichkeiten das Teilchen im jeweiligen Zustand vorzufinden.
 \end{frame}
 
 \begin{frame}
 \frametitle{Messungen}
 Motivation: Wir wollen den finalen Zustand unseres Experimentes kennen.  Darum m\"ussen wir eine Messung durchf\"uhren.  Jeder Filter ist ein Messapparat.
+
+\bigskip
 Pregunta: Was ist das Resultat einer Messung f\"ur ein einzelnes Photon?
-Antwort: Sie war in dir die ganze Zeit.  Jeder Messung ist eine Projektion auf den Vektor der Messung.  Ich lerne nie gute schreiben auf Deutsch, weil ich kein Deutschmeister wie Brian bin.
-Und jetzt sind wir fix und fertig.  Mittlerweile kann ich ein bisschen Deutsch.  Ja, klar.
+
+\bigskip
+Antwort: Jede Messung ist eine Projektion auf den Vektor der Messung.
+
+\bigskip
+Beispiele eines Messoperators:
+\begin{align*}
+    \ket{\rightarrow}\bra{\rightarrow},
+    \quad
+    \ket{\uparrow}\bra{\uparrow}
+\end{align*}
 \end{frame}
 
 \begin{frame}
-\frametitle{Projektion}
-[Figure 2.4]
-\end{frame}
-
-\begin{frame}
-\frametitle{Wahrscheinlichkeiten}
-[talk uber a und b and their magnitutde squard being the relative probabilities]
+\frametitle{Messoperatoren}
+Auf unseren vorigen Zustand angewendet,
+\begin{align*}
+    \Big(\ket{\rightarrow}\bra{\rightarrow}\Big) \ket{\psi}
+    &=
+    \Big(\ket{\rightarrow}\bra{\rightarrow}\Big)
+    \Big(a\ket{\to} + b\ket{\uparrow}\Big)\,,
+    \\
+    \ket{\uparrow}\bra{\uparrow}
+            \ket{\psi} &= a\ket{\to} + b\ket{\uparrow}
+\end{align*}
 \end{frame}
 
 \end{document} 
+
+
+% vim: set sw=4 et sts=4 :
