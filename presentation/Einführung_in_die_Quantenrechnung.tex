@@ -309,7 +309,51 @@ Beispiele:
 \end{align*}
 \end{frame}
 
-\subsection{Wahrscheinlichkeiten}
+\begin{frame}
+\frametitle{Inner Product}
+\begin{align*}
+\ket{\psi} \cdot \ket{\varphi} &= \left(\bra{\psi}\right)\left(\ket{\varphi}\right) \\
+&= \bra{\psi}\ket{\varphi} \\
+&= \bra{\varphi}\ket{\psi}^*
+\end{align*}
+if
+\begin{align*}
+\ket{\psi} = a\ket{\rightarrow} + b\ket{\uparrow}
+\end{align*}
+where $a,\,b\in\mathbb{C}$, then
+\begin{align*}
+\bra{\psi} = a^*\bra{\rightarrow} + b^*\bra{\uparrow}
+\end{align*}
+wobei $a^*$ ist die konjugiert komplexe Zahl von $a$ und
+
+wobei $\bra{\psi}$ is the Dual Vector of $\ket{\psi}$
+\end{frame}
+
+\begin{frame}
+\frametitle{Orthonormality}
+$\ket{\psi}$ is orthogonal to $\ket{\varphi}$ iff $\bra{\psi}\ket{\varphi} = 0$.
+
+\bigskip
+
+$\ket{\psi}$ is normalized iff $\bra{\psi}\ket{\psi} = 1$.
+
+\bigskip
+
+A basis is orthonormal iff $\bra{\psi}\ket{\varphi} = \delta_{\psi\varphi}^\mathrm{K}$ for basis vectors $\ket{psi}$ and $\ket{\varphi}$.
+
+\bigskip
+
+Bespielsweise,
+\begin{align*}
+\bra{\rightarrow}\ket{\rightarrow} &= 1 &
+\bra{\rightarrow}\ket{\uparrow} &= 0 \\
+\bra{\uparrow}\ket{\rightarrow} &= 0 &
+\bra{\uparrow}\ket{\uparrow} &= 1
+\end{align*}
+\end{frame}
+
+
+\subsection{Messungen und Wahrscheinlichkeiten}
 
 \begin{frame}
 \frametitle{Wahrscheinlichkeiten}
@@ -336,23 +380,6 @@ Teilchen: $|a|^2$ und $|b|^2$ sind die relativen Wahrscheinlichkeiten das Teilch
 \end{frame}
 
 \begin{frame}
-\frametitle{Normalisierung eines Vektors: Bras und Kets}
-[Talk about orthogonality, then inner product, then normalization, then measurements.]
-\begin{align*}
-    \ket{\psi} &= a\ket{\to} + b\ket{\uparrow},
-    \\
-    \bra{\psi} &= a^*\bra{\to} + b^*\bra{\uparrow},
-\end{align*}
-wobei $a^*$ ist die konjugiert komplexe Zahl von $a$.
-
-\bigskip
-Teilchen: $|a|^2$ und $|b|^2$ sind die relativen Wahrscheinlichkeiten das Teilchen im jeweiligen Zustand vorzufinden.
-\end{frame}
-
-
-\subsection{Messungen}
-
-\begin{frame}
 \frametitle{Messungen}
 Motivation: Wir wollen den finalen Zustand unseres Experimentes kennen.  Darum m\"ussen wir eine Messung durchf\"uhren.  Jeder Filter ist ein Messapparat.
 
@@ -373,16 +400,43 @@ Beispiele eines Messoperators:
 
 \begin{frame}
 \frametitle{Messoperatoren}
+\begin{align*}
+\ket{\psi} = a\ket{\rightarrow} + b\ket{\uparrow}
+\end{align*}
+
+\bigskip
 Auf unseren vorigen Zustand angewendet,
 \begin{align*}
-    \Big(\ket{\rightarrow}\bra{\rightarrow}\Big) \ket{\psi}
+    \left(\ket{\rightarrow}\bra{\rightarrow}\right) \ket{\psi}
     &=
-    \Big(\ket{\rightarrow}\bra{\rightarrow}\Big)
-    \Big(a\ket{\to} + b\ket{\uparrow}\Big)\,,
-    \\
-    \ket{\uparrow}\bra{\uparrow}
-            \ket{\psi} &= a\ket{\to} + b\ket{\uparrow}
+    \left(\ket{\rightarrow}\bra{\rightarrow}\right)
+    \left(a\ket{\to} + b\ket{\uparrow}\right) \\
+    &= a\ket{\rightarrow}\bra{\rightarrow}\ket{\rightarrow} + b\ket{\rightarrow}\bra{\rightarrow}\ket{\uparrow} \\
+    &= a\ket{\rightarrow}
 \end{align*}
+\begin{align*}
+    \left(\ket{\uparrow}\bra{\uparrow}\right) \ket{\psi} &= \text{Ihr sagt's uns...}
+\end{align*}
+\end{frame}
+
+\begin{frame}
+\frametitle{Messoperatoren}
+\begin{align*}
+    \ket{\rightarrow}\bra{\rightarrow} \ket{\psi}
+    &= a\ket{\rightarrow} \\
+    \ket{\uparrow}\bra{\uparrow} \ket{\psi} &= b\ket{\uparrow}
+\end{align*}
+
+\begin{align*}
+    \bra{\psi}\ket{\rightarrow}\bra{\rightarrow} \ket{\psi}
+    &= |a|^2 \\
+    \bra{\psi}\ket{\uparrow}\bra{\uparrow} \ket{\psi} &= |b|^2
+\end{align*}
+\end{frame}
+
+\begin{frame}
+\frametitle{\textquestiondown Irgendwelche Fraguntas?}
+Gendered nouns are stupid, get wrecked German/Spanish, English FTW
 \end{frame}
 
 
