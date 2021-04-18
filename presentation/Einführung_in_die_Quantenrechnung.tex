@@ -339,7 +339,7 @@ $\ket{\psi}$ is normalized iff $\bra{\psi}\ket{\psi} = 1$.
 
 \bigskip
 
-A basis is orthonormal iff $\bra{\psi}\ket{\varphi} = \delta_{\psi\varphi}^\mathrm{K}$ for basis vectors $\ket{psi}$ and $\ket{\varphi}$.
+A basis is orthonormal iff $\bra{\psi}\ket{\varphi} = \delta_{\psi\varphi}^\mathrm{K}$ for basis vectors $\ket{\psi}$ and $\ket{\varphi}$.
 
 \bigskip
 
@@ -433,6 +433,31 @@ Auf unseren vorigen Zustand angewendet,
     \bra{\psi}\ket{\uparrow}\bra{\uparrow} \ket{\psi} &= |b|^2
 \end{align*}
 \end{frame}
+
+\begin{frame}
+\frametitle{45 Messoperatoren Beispiel}
+\begin{align*}
+\bra{\psi}\ket{\nearrow} &= \left(a^*\bra{\rightarrow} + b^*\bra{\uparrow}\right)\left(\frac{1}{\sqrt{2}}\ket{\rightarrow} + \frac{1}{\sqrt{2}}\ket{\uparrow}\right) \\
+&= \frac{a^*}{\sqrt{2}}\bra{\rightarrow}\ket{\rightarrow} + \frac{b^*}{\sqrt{2}}\bra{\uparrow}\ket{\rightarrow} + \frac{a^*}{\sqrt{2}}\bra{\rightarrow}\ket{\uparrow} + \frac{b^*}{\sqrt{2}}\bra{\uparrow}\ket{\uparrow} \\
+&= \frac{a^*}{\sqrt{2}} + \frac{b^*}{\sqrt{2}} \\
+&= \frac{a^* + b^*}{\sqrt{2}} \\
+\bra{\nearrow}\ket{\psi} &= \frac{a + b}{\sqrt{2}}
+\end{align*}
+Darum,
+\begin{align*}
+\bra{\psi}\ket{\nearrow}\bra{\nearrow}\ket{\psi} = \frac{|a|^2 + a^*b + ab^* + |b|^2}{2}
+\end{align*}
+If $\ket{\psi} = \ket{\rightarrow}$ then, $\bra{\rightarrow}\ket{\nearrow}\bra{\nearrow}\ket{\rightarrow} = \frac{1}{2}$
+\end{frame}
+
+
+
+
+
+
+
+
+
 
 \begin{frame}
 \frametitle{\textquestiondown Irgendwelche Fraguntas?}
